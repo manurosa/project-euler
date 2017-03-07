@@ -5,7 +5,14 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 function run (limit) {
-  return limit
+  var result = []
+  while (limit--) {
+    if (limit % 3 === 0 || limit % 5 === 0) {
+      result.push(limit)
+    }
+  }
+
+  return result.reduce((acc, current) => { return acc + current })
 }
 
 module.exports = { run: run }
