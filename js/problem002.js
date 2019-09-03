@@ -39,7 +39,7 @@ function run (limit) {
     return this[this.length - 2]
   }
 
-  return reduceIter(fibonacciSequence(fibonacciNumbers, limit), (acc, curr) => acc + curr)
+  return reduceIter(fibonacciSequence(fibonacciNumbers, limit), (acc, curr) => acc + curr) - 1 // TODO: take the first 1 out of the sum 
 }
 
 module.exports = {run: run}

@@ -14,9 +14,11 @@ class Problem002
     begin
       last, prev = seq.last(2)
       next_number = last + prev
-      seq.push(next_number) if next_number.even?
+      seq.push(next_number)
     end while next_number < limit
 
-    seq.reduce(:+)
+    seq.reduce 0 do |acc, curr|
+      curr.even? ? acc + curr : acc
+    end
   end
 end

@@ -12,7 +12,7 @@ end
 describe Problem002 do
   context 'Given the limit 4000000' do
     it 'returns 4613733' do
-      expect(Problem002.run(4_000_000)).to equal(4_613_733)
+      expect(Problem002.run(4_000_000)).to equal(4_613_732)
     end
   end
 end

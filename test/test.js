@@ -6,18 +6,18 @@ var problem3 = require('../js/problem003')
 
 describe('Problem 001', function () {
   it('should return 233168 as the correct answer', function () {
-    assert.equal(233168, problem1.run(1000))
+    assert.equal(problem1.run(1000), 233168)
   })
 })
 
 describe('Problem 002', function () {
   it('should return 4613732 as the correct answer', function () {
-    assert.equal(4613733, problem2.run(4000000))
+    assert.equal(problem2.run(4000000), 4613732)
   })
 })
 
 describe('Problem 003', function () {
   it('should return 6857 as the correct answer', function () {
-    assert.equal(6857, problem3.run())
+    assert.equal(problem3.run(), 6857)
   })
 })
